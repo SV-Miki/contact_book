@@ -13,8 +13,8 @@ def add_contacts(contacts):
     if not name:
         print("Имя не может быть пустым")
         return
-    elif not phone.isdigit():
-        print("Телефон должен состоять только из цифр")
+    if not phone.isdigit():
+        print("Телефон должен состоять только из ")
         return
     contact = {"name": name, "phone": phone, "email": email}
     contacts.append(contact)
